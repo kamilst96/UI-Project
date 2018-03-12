@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/mobile.css">
+  <title>Kamil Stępień &bull; Zadanie 1</title>
+</head>
+
+<body>
+  <header id="top">
+    <a href="" class="flex">
+      <img src="images/logo-small.png">
+      <span class="home">Volkswagen Polska</span>
+    </a>
+  </header>
+
+  <nav id="navbar">
+    <a href="javascript:void(0);" id="navtoggle" class="navtoggle" onclick="toggleNavbar()">&#9662; Menu &#9662;</a>
+    <a href="#offer" class="navitem">Oferta</a>
+    <a href="#info" class="navitem">Informacje</a>
+    <a href="#gallery" class="navitem">Galeria</a>
+    <a href="#media" class="navitem">Media</a>
+    <a href="#contact" class="navitem">Kontakt</a>
+  </nav>
+
+  <article>
+    <section id="offer">
+      <h1>Oferta</h1>
+
+      <div class="content cols">
+        <div class="col col-first">
+          <h2>Test nagłówków</h2>
+
+          <img src="images/fruits/2.jpg" alt="Kosz z owocami">
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id porta est. Praesent ut enim at lectus dapibus lacinia vitae
+            et nulla. Vestibulum vitae arcu a turpis gravida dictum a eget justo.
+          </p>
+
+          <h2>Kolejny nagłówek</h2>
+
+          <p>
+            Fusce eget tristique est, sit amet luctus metus. Etiam mattis eros imperdiet, blandit lacus non, blandit risus. Nam rhoncus
+            vestibulum quam eu aliquet. Donec pretium sed diam sit amet fringilla. Interdum et malesuada fames ac ante ipsum
+            primis in faucibus. Aliquam velit nisl, efficitur in nibh ac, elementum condimentum metus.
+          </p>
+        </div>
+
+        <div class="col">
+          <h2>Test tekstu i obrazu</h2>
+
+          <p>
+            Aliquam nec ullamcorper neque. Nunc vitae pharetra nisi. Donec pretium sed diam sit amet fringilla. Interdum et malesuada
+            fames ac ante ipsum primis in faucibus.
+          </p>
+
+          <img src="images/fruits/1.jpg" alt="Arbuz">
+
+          <p>
+            Aliquam nec ullamcorper neque. Nunc vitae pharetra nisi. Phasellus mauris massa, vehicula id elit vel, semper semper elit.
+            Ut sit amet viverra neque. Nunc nec hendrerit nisi.
+          </p>
+
+          <h2>Tuut tuut</h2>
+          <p>
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam velit nisl, efficitur in nibh ac, elementum condimentum
+            metus.
+          </p>
+        </div>
+
+        <div class="col col-last">
+          <h2>Pacze więcej nagłówków</h2>
+
+          <p>
+            Aliquam nec ullamcorper neque. Nunc vitae pharetra nisi. Phasellus mauris massa, vehicula id elit vel, semper semper elit.
+            Ut sit amet viverra neque. Nunc nec hendrerit nisi. Nam nec porta mi.
+          </p>
+
+          <h2>Nagłówek w tekście</h2>
+
+          <p>
+            Phasellus ut eros dignissim nisi aliquam venenatis. Nullam ultricies porta commodo. In luctus nisl sit amet luctus aliquet.
+            Nulla feugiat nulla a gravida lobortis. Aenean purus tellus, vulputate in dui et, ornare vehicula nibh. Vestibulum
+            maximus auctor consequat. Quisque vel vulputate purus. Fusce faucibus felis orci, ac gravida dolor hendrerit
+            a. Aenean sollicitudin volutpat dignissim.
+          </p>
+
+          <img src="images/fruits/3.jpg" alt="Koktajl">
+        </div>
+      </div>
+    </section>
+
+    <section id="info">
+      <h1>Informacje</h1>
+
+      <div class="content">
+        Tekst
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h1>Galeria</h1>
+
+      <div class="content">
+        Tekst
+      </div>
+    </section>
+
+    <section id="media">
+      <h1>Media</h1>
+
+      <div class="content">
+        <div class="iframe iframe169">
+          <iframe src="https://www.youtube.com/embed/xDtMPAAmiAc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>Kontakt</h1>
+
+      <div class="content cols">
+        <div class="col col-first">
+          <h2>Znajdź nas na mapie:</h2>
+
+          <div class="iframe iframe43">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d734.1268175956646!2d19.467487514908395!3d51.76415115152978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bcb29f8d60daf%3A0xbd2787935df61720!2sSpo%C5%82eczna+Akademia+Nauk!5e0!3m2!1spl!2spl!4v1519903301018"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="col col-last">
+          <h2>Skontaktuj się z nami:</h2>
+
+          <form method="POST">
+            <p>Imię</p>
+            <input type="text" name="name">
+            <p>Nazwisko:</p>
+            <input type="text" name="surname">
+            <p>Adres e-mail:</p>
+            <input type="text" name="email">
+            <p>Treść wiadomości:</p>
+            <textarea class="textarea" name="message"></textarea>
+            <input type="submit" class="btn" value="Wyślij wiadomość">
+          </form>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <footer>
+    <p>
+      Copyright &copy; 2018, Kamil Stępień
+    </p>
+
+    <a href="#top">Na górę</a>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+</body>
+
+</html>

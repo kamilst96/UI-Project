@@ -1,0 +1,48 @@
+/*
+ * Mobile config
+ */
+
+@media all and (max-width: 640px) {
+  /* Break logo and company name into columns */
+  header .flex {
+    flex-flow: column;
+  }
+  header img {
+    width: 80px;
+    height: 80px;
+    margin: 1px auto;
+  }
+  header .home {
+    height: 26px;
+    font-size: 22px;
+    margin-top: 1px;
+  }
+  /* Mobile navbar */
+  nav {
+    flex-flow: column;
+    text-align: center;
+  }
+  nav a.navitem {
+    display: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  nav a.responsive {
+    display: inline;
+  }
+  nav a.navtoggle {
+    display: inline;
+    color: #f57c00;
+  }
+  /* Break all rows into columns for mobile view */
+  section .cols {
+    flex-flow: column;
+  }
+  section .cols .col {
+    padding: 0;
+  }
+  /* Maximize input widths */
+  section input,
+  section textarea {
+    width: 100%;
+  }
+}
