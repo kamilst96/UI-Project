@@ -33,6 +33,10 @@
     display: inline;
     color: #f57c00;
   }
+  /* Centers section title */
+  section h1 {
+    text-align: center;
+  }
   /* Break all rows into columns for mobile view */
   section .cols {
     flex-flow: column;
