@@ -67,6 +67,9 @@ nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  position: sticky; /* Doesn't work in IE */
+  top: -1px;
+  z-index: 1;
 }
 
 nav a {
@@ -117,7 +120,6 @@ section h1 {
   font-size: 22px;
   font-weight: normal;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 3px 3px 0 0;
   padding: 12px 10px;
   margin: 0;
 }
@@ -125,8 +127,6 @@ section h1 {
 /* Content */
 
 section .content {
-  border-radius: 0 0 3px 3px;
-  min-height: 40px;
   padding: 10px;
 }
 
@@ -163,11 +163,11 @@ section .cols .col {
   flex: 1;
 }
 
-section .cols .col.col-first {
+section .cols .col.first {
   padding-left: 0;
 }
 
-section .cols .col.col-last {
+section .cols .col.last {
   padding-right: 0;
 }
 
@@ -195,6 +195,7 @@ section .iframe iframe {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 0;
   width: 100% !important;
   height: 100% !important;
 }
