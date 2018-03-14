@@ -225,6 +225,7 @@ section textarea:focus {
 }
 
 section input[type="text"],
+section input[type="password"],
 section textarea {
   background: #fafafa;
   margin-bottom: 10px;
@@ -235,6 +236,7 @@ section textarea {
   min-height: 80px;
 }
 
+section input[type="button"],
 section input[type="submit"] {
   background: #1e88e5;
   color: #ffffff;
