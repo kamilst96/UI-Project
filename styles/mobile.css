@@ -3,50 +3,70 @@
  */
 
 @media all and (max-width: 640px) {
-  /* Break logo and company name into columns */
-  header .flex {
+  /*
+   * Header
+   */
+  header a {
+    /* Box model */
     flex-flow: column;
   }
   header img {
-    width: 80px;
+    /* Box model */
     height: 80px;
     margin: 1px auto;
+    width: 80px;
   }
-  header .home {
+  header span {
+    /* Box model */
     height: 26px;
-    font-size: 22px;
-    margin-top: 1px;
+    /* Typography */
+    text-align: center;
+    font-size: 1.4rem;
   }
-  /* Mobile navbar */
+  /*
+   * Navbar
+   */
   nav {
+    /* Box model */
     flex-flow: column;
+    /* Typography */
     text-align: center;
   }
-  nav a.navitem {
-    display: none;
+  nav a:not(.navtoggle) {
+    /* Box model */
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  nav a.responsive {
-    display: inline;
+    display: none;
+    /* Background */
+    background: #fafafa;
   }
   nav a.navtoggle {
+    /* Box model */
     display: inline;
+    /* Typography */
     color: #f57c00;
   }
-  /* Centers section title */
+  nav a.responsive {
+    /* Box model */
+    display: inline;
+  }
+  /*
+   * Content
+   */
   section h1 {
+    /* Typography */
     text-align: center;
   }
-  /* Break all rows into columns for mobile view */
   section .cols {
+    /* Box model */
     flex-flow: column;
   }
   section .cols .col {
+    /* Box model */
     padding: 0;
   }
-  /* Maximize input widths */
   section input,
   section textarea {
+    /* Box model */
     width: 100%;
   }
 }

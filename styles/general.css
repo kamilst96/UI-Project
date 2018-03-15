@@ -1,28 +1,23 @@
-/* Common config */
-
 body {
-  background: #f6f6f6;
+  /* Box model */
+  margin: 0;
+  padding: 0;
+  /* Background */
+  background: #f0f0f0;
+  /* Typography */
   color: #333333;
   font-family: sans-serif;
-  padding: 0;
-  margin: 0;
 }
 
 a {
+  /* Typography */
   color: #1e88e5;
   text-decoration: none;
 }
 
-/* Switch from content-box to border-box, for more convenient sizing */
-
 * {
+  /* Box model */
   box-sizing: border-box;
-}
-
-div,
-img {
-  padding: 0;
-  margin: 0;
 }
 
 /*
@@ -30,28 +25,33 @@ img {
  */
 
 header {
+  /* Box model */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  /* Background */
   background: #ffffff;
-  text-align: center;
-  padding: 24px 0;
 }
 
-header .flex {
+header a {
+  /* Box model */
   display: flex;
   flex-flow: row;
   justify-content: center;
 }
 
 header img {
-  width: 140px;
+  /* Box model */
   height: 140px;
   margin: 1px;
+  width: 140px;
 }
 
-header .home {
-  height: 44px;
+header span {
+  /* Box model */
+  margin: auto 0;
+  /* Typography */
   color: #333333;
-  font-size: 38px;
-  margin-top: 48px;
+  font-size: 3rem;
 }
 
 /*
@@ -59,32 +59,37 @@ header .home {
  */
 
 nav {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  background: #ffffff;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-  position: sticky; /* Doesn't work in IE */
+  /* Positioning */
+  position: sticky;
   top: -1px;
   z-index: 1;
+  /* Box model */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin-bottom: 0.6rem;
+  /* Background */
+  background: #ffffff;
 }
 
 nav a {
-  font-size: 20px;
+  /* Box model */
+  padding: 0.6rem 1.8rem;
+  /* Typography */
+  font-size: 1.2rem;
+  /* Animation */
   transition: linear 0.1s;
-  padding: 10px 30px;
 }
 
-nav a.navitem:hover {
+nav a:not(.navtoggle):hover {
+  /* Background */
   background: rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive menu toggle - hide in desktop version */
-
 nav a.navtoggle {
+  /* Box model */
   display: none;
 }
 
@@ -95,118 +100,129 @@ nav a.navtoggle {
 /* Content container */
 
 article {
-  max-width: 960px;
+  /* Box model */
   margin: 0 auto;
+  max-width: 960px;
 }
 
-/*
- * Cards
- */
+/* Section */
 
 section {
-  background: #ffffff;
-  color: #333333;
+  /* Box model */
+  margin: 0 0.6rem 0.6rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
-  margin: 0 10px 10px;
+  border-radius: 0.4rem;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  /* Typography */
+  color: #333333;
+  /* Background */
+  background: #ffffff;
 }
 
 /* Title */
 
 section h1 {
-  color: #0097A7;
-  height: 48px;
-  font-size: 22px;
-  font-weight: normal;
+  /* Box model */
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 12px 10px;
   margin: 0;
+  padding: 0.6rem;
+  /* Typography */
+  color: #0097A7;
+  font-weight: normal;
+  font-size: 1.4rem;
 }
 
-/* Content */
-
 section .content {
-  padding: 10px;
+  /* Box model */
+  padding: 0.6rem;
 }
 
 /*
- * Card components.
+ * Section components
  */
 
-/* Heading */
-
 section h2 {
-  font-size: 18px;
+  /* Typography */
+  font-size: 1.2rem;
 }
 
-/* Paragraph */
-
 section p {
+  /* Typography */
   line-height: 1.4;
 }
 
 /*
  * Equal width columns.
  * Use .cols on parent, .col on children,
- * and append col-first / col-last on first/last columns.
+ * and append first / last on first/last columns.
  */
 
 section .cols {
+  /* Box model */
   display: flex;
   flex-flow: row;
+  /* Typography */
   text-align: justify;
 }
 
 section .cols .col {
-  padding: 0 8px;
+  /* Box model */
   flex: 1;
+  padding: 0 0.6rem;
 }
 
 section .cols .col.first {
+  /* Box model */
   padding-left: 0;
 }
 
 section .cols .col.last {
+  /* Box model */
   padding-right: 0;
 }
 
-/* Images */
-
 section img {
+  /* Box model */
+  border-radius: 0.2rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  display: block;
   max-width: 100%;
   max-height: 100%;
-  display: block;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Iframes */
 
 section .iframe {
-  width: 100%;
-  height: 0;
-  border: 0;
-  position: relative;
+  /* Positioning */
   overflow: hidden;
+  position: relative;
+  /* Box model */
+  border: 0;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  height: 0;
+  width: 100%;
 }
 
 section .iframe iframe {
+  /* Positioning */
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
   z-index: 0;
-  width: 100% !important;
-  height: 100% !important;
+  /* Box model */
+  height: 100%;
+  width: 100%;
 }
 
 /* Iframe variants: 4:3 and 16:9. Append to other parameters */
 
 section .iframe.iframe43 {
+  /* Box model */
   padding-bottom: 75%;
 }
 
 section .iframe.iframe169 {
+  /* Box model */
   padding-bottom: 56.25%;
 }
 
@@ -214,13 +230,15 @@ section .iframe.iframe169 {
 
 section input,
 section textarea {
+  /* Box model */
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
+  border-radius: 0.2rem;
   padding: 6px;
 }
 
 section input:focus,
 section textarea:focus {
+  /* Box model */
   border-color: #1e88e5;
   outline: none;
 }
@@ -228,26 +246,31 @@ section textarea:focus {
 section input[type="text"],
 section input[type="password"],
 section textarea {
-  background: #fafafa;
+  /* Box model */
   margin-bottom: 10px;
+  /* Background */
+  background: #fafafa;
 }
 
 section textarea {
-  width: 100%;
+  /* Box model */
   min-height: 80px;
+  width: 100%;
 }
 
 section input[type="button"],
 section input[type="submit"] {
-  background: #1e88e5;
-  color: #ffffff;
+  /* Box model */
   padding: 8px 12px;
+  /* Typography */
+  color: #ffffff;
+  /* Background */
+  background: #1e88e5;
 }
 
-/* Paragraph in forms */
-
 section form p {
-  margin: 0 0 1px 0;
+  /* Box model */
+  margin: 0;
 }
 
 /*
@@ -255,14 +278,18 @@ section form p {
  */
 
 footer {
-  background: #ffffff;
+  /* Box model */
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -4px 4px -4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  /* Typography */
   color: #333333;
   text-align: center;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 18px 0;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  /* Background */
+  background: #ffffff;
 }
 
 footer p {
-  margin: 0 0 12px 0;
+  /* Box model */
+  margin: 0 0 0.6rem;
 }
