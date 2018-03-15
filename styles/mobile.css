@@ -36,8 +36,10 @@
     /* Box model */
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     display: none;
-    /* Background */
-    background: #fafafa;
+  }
+  nav a:not(.navtoggle).responsive {
+    /* Box model */
+    display: inline;
   }
   nav a.navtoggle {
     /* Box model */
@@ -45,9 +47,9 @@
     /* Typography */
     color: #f57c00;
   }
-  nav a.responsive {
-    /* Box model */
-    display: inline;
+  nav a.navtoggle.responsive {
+    /* Background */
+    background: #fafafa;
   }
   /*
    * Content

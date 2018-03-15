@@ -15,6 +15,10 @@ $(document).ready(function () {
       $(this).toggleClass("responsive");
     });
 
+    navtoggle.each(function() {
+      $(this).toggleClass("responsive");
+    })
+
     /* Change navtoggle mode */
     var symbol = navitems.first().hasClass("responsive") ? "&#9652;" : "&#9662;";
     navtoggle.html(symbol + " Menu " + symbol);
