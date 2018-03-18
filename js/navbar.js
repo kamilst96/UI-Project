@@ -2,7 +2,7 @@
  * jQuery script: Toggle responsive menu visibility.
  */
 
-$(document).ready(function () {
+$(function () {
   /* Initialize variables */
   var $navitems = $('nav a:not(.navtoggle)');
   var $navtoggle = $('nav a.navtoggle');
