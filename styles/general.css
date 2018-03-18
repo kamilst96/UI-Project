@@ -55,6 +55,28 @@ header span {
 }
 
 /*
+ * Banner
+ */
+
+aside {
+  /* Background */
+  background: #333333;
+}
+
+aside .container {
+  /* Box model */
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+aside img {
+  /* Box model */
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/*
  * Navbar
  */
 
@@ -64,6 +86,7 @@ nav {
   top: -1px;
   z-index: 1;
   /* Box model */
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.1);
   display: flex;
