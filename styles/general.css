@@ -60,13 +60,14 @@ header span {
 
 aside {
   /* Background */
-  background: #333333;
+  background: #000000;
 }
 
 aside .container {
   /* Box model */
   margin: 0 auto;
   max-width: 960px;
+  padding: 10px 0;
 }
 
 aside img {
