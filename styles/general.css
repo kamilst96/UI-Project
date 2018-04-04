@@ -55,6 +55,25 @@ header span {
 }
 
 /*
+ * Banner
+ */
+
+aside {
+  /* Background */
+  background: #ffffff;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+aside img {
+  /* Box model */
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/*
  * Navbar
  */
 
@@ -64,12 +83,14 @@ nav {
   top: -1px;
   z-index: 1;
   /* Box model */
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   flex-flow: row;
   justify-content: center;
-  margin-bottom: 0.6rem;
+  margin: 0 auto 0.6rem;
+  max-width: 960px;
   /* Background */
   background: #ffffff;
 }
