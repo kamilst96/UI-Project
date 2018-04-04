@@ -1,0 +1,26 @@
+.cycle-slideshow {
+  /* Positioning */
+  z-index: 0;
+  /* Box model */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.cycle-slideshow img {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.cycle-gallery-pager {
+  /* Box model */
+  display: flex;
+  flex-flow: row;
+  margin: 0.6rem auto 0;
+  max-width: 60%;
+}
+
+.cycle-gallery-pager img {
+  /* Box model */
+  box-shadow: none;
+  flex: 1;
+  padding: 0 0.3rem;
+}
