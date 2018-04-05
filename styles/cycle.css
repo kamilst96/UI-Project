@@ -1,26 +1,41 @@
+/* Basic Cycle2 configuration */
+
 .cycle-slideshow {
   /* Positioning */
   z-index: 0;
-  /* Box model */
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
 .cycle-slideshow img {
+  /* Box model */
   box-shadow: none;
   border-radius: 0;
 }
 
-.cycle-gallery-pager {
+/* Gallery */
+
+.cycle-slideshow.gallery {
   /* Box model */
-  display: flex;
-  flex-flow: row;
-  margin: 0.6rem auto 0;
-  max-width: 60%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
-.cycle-gallery-pager img {
+.cycle-pager-gallery {
+  /* Display */
+  display: flex;
+  flex-flow: row;
   /* Box model */
-  box-shadow: none;
+  margin: 0.4rem auto 0;
+}
+
+.cycle-pager-gallery a {
+  /* Box model */
+  margin: 0 0.2rem;
+}
+
+.cycle-pager-gallery img {
+  /* Display */
+  display: block;
   flex: 1;
-  padding: 0 0.3rem;
+  /* Box model */
+  height: 100%;
+  width: 100%;
 }

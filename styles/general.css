@@ -26,14 +26,14 @@ a {
 
 header {
   /* Box model */
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   padding: 1rem 0;
   /* Background */
   background: #ffffff;
 }
 
 header a {
-  /* Box model */
+  /* Display */
   display: flex;
   flex-flow: row;
   justify-content: center;
@@ -59,16 +59,19 @@ header span {
  */
 
 aside {
-  /* Background */
-  background: #ffffff;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  /* Box model */
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-width: 0 1px;
   margin: 0 auto;
   max-width: 960px;
+  /* Background */
+  background: #ffffff;
 }
 
 aside img {
-  /* Box model */
+  /* Display */
   display: block;
+  /* Box model */
   height: 100%;
   width: 100%;
 }
@@ -82,14 +85,14 @@ nav {
   position: sticky;
   top: -1px;
   z-index: 1;
-  /* Box model */
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 0 0 2px 2px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  /* Display */
   display: flex;
   flex-flow: row;
   justify-content: center;
-  margin: 0 auto 0.6rem;
+  /* Box model */
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 0.4rem 0.4rem;
+  margin: 0 auto 0.4rem;
   max-width: 960px;
   /* Background */
   background: #ffffff;
@@ -110,7 +113,7 @@ nav a:not(.navtoggle):hover {
 }
 
 nav a.navtoggle {
-  /* Box model */
+  /* Display */
   display: none;
 }
 
@@ -130,7 +133,7 @@ article {
 
 section {
   /* Box model */
-  margin: 0 0.6rem 0.6rem;
+  margin: 0 0.4rem 0.4rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.4rem;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
@@ -301,7 +304,6 @@ section form p {
 footer {
   /* Box model */
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 -4px 4px -4px rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
   /* Typography */
   color: #333333;
