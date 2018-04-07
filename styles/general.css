@@ -132,9 +132,8 @@ article {
 section {
   /* Box model */
   margin: 0 0.4rem 0.4rem;
-  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.4rem;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
   /* Typography */
   color: #333333;
   /* Background */
@@ -150,8 +149,8 @@ section h1 {
   padding: 0.7rem 0.6rem;
   /* Typography */
   color: #0097A7;
-  font-weight: normal;
   font-size: 1.4rem;
+  font-weight: normal;
 }
 
 section .content {
@@ -170,7 +169,8 @@ section h2 {
 
 section p {
   /* Typography */
-  line-height: 1.4;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 /*
@@ -190,24 +190,24 @@ section .cols {
 section .cols .col {
   /* Box model */
   flex: 1;
-  padding: 0 0.6rem;
+  margin: 0 0.6rem;
 }
 
 section .cols .col.first {
   /* Box model */
-  padding-left: 0;
+  margin-left: 0;
 }
 
 section .cols .col.last {
   /* Box model */
-  padding-right: 0;
+  margin-right: 0;
 }
 
 section img {
-  /* Box model */
-  border-radius: 0.2rem;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  /* Display */
   display: block;
+  /* Box model */
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
   max-width: 100%;
   max-height: 100%;
 }
@@ -220,7 +220,7 @@ section .iframe {
   position: relative;
   /* Box model */
   border: 0;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
   height: 0;
   width: 100%;
 }

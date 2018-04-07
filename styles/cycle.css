@@ -8,14 +8,13 @@
 .cycle-slideshow img {
   /* Box model */
   box-shadow: none;
-  border-radius: 0;
 }
 
 /* Gallery */
 
 .cycle-slideshow.gallery {
   /* Box model */
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
 }
 
 .cycle-pager-gallery {
@@ -39,6 +38,8 @@
   height: 100%;
   width: 100%;
 }
+
+/* Hide image select on mobile */
 
 @media all and (max-width: 640px) {
   .cycle-pager-gallery {
