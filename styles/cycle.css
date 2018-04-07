@@ -15,7 +15,7 @@
 
 .cycle-slideshow.gallery {
   /* Box model */
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
 }
 
 .cycle-pager-gallery {
@@ -38,4 +38,10 @@
   /* Box model */
   height: 100%;
   width: 100%;
+}
+
+@media all and (max-width: 640px) {
+  .cycle-pager-gallery {
+    display: none;
+  }
 }

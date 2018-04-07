@@ -17,8 +17,6 @@
     width: 80px;
   }
   header span {
-    /* Box model */
-    height: 26px;
     /* Typography */
     text-align: center;
     font-size: 1.4rem;
@@ -27,15 +25,16 @@
    * Navbar
    */
   nav {
-    /* Box model */
+    /* Display */
     flex-flow: column;
     /* Typography */
     text-align: center;
   }
   nav a:not(.navtoggle) {
+    /* Display */
+    display: none;
     /* Box model */
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    display: none;
   }
   nav a:not(.navtoggle).responsive {
     /* Box model */
@@ -59,7 +58,7 @@
     text-align: center;
   }
   section .cols {
-    /* Box model */
+    /* Display */
     flex-flow: column;
   }
   section .cols .col {

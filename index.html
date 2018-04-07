@@ -4,24 +4,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Kamil Stępień">
 
   <!-- Normalize CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 
-  <!-- Local stylesheet -->
+  <!-- Local stylesheets -->
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/mobile.css">
   <link rel="stylesheet" href="styles/cycle.css">
 
-  <title>Kamil Stępień &bull; Zadanie 1</title>
+  <title>Kamil Stępień &bull; Projekt zaliczeniowy</title>
 </head>
 
 <body>
   <header id="top">
     <a href="">
       <img src="images/logo-small.png">
-      <span>Volkswagen Polska</span>
+      <span>Nowy warzywniak</span>
     </a>
   </header>
 
@@ -115,6 +115,7 @@
       <h1>Informacje</h1>
 
       <div class="content">
+        <h2>Pierwszy nagłówek</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi nisl, vestibulum at molestie sed, elementum quis felis.
           Nunc pharetra venenatis mi, consectetur eleifend ante consectetur eu. Etiam vitae feugiat enim. Cras faucibus sem
@@ -133,6 +134,8 @@
           finibus placerat neque, at elementum est venenatis in. Mauris ut purus sed velit ultrices gravida. Sed euismod
           nec velit a sagittis.
         </p>
+
+        <h2>Drugi nagłówek</h2>
 
         <p>
           Pellentesque vestibulum auctor ultrices. Vivamus eget lacinia magna. Morbi vulputate suscipit finibus. Maecenas dignissim
@@ -153,6 +156,8 @@
           sodales. Curabitur posuere mi in magna eleifend molestie.
         </p>
 
+        <h2>Ostatni nagłówek</h2>
+
         <p>
           Suspendisse luctus lacus ac elit rutrum fermentum. Donec sagittis sagittis nisl, et consequat tellus venenatis et. Proin
           quis enim accumsan, semper quam sit amet, pulvinar leo. Aenean ac ornare tortor. Nam ut ultrices odio. Suspendisse
@@ -169,12 +174,13 @@
       <h1>Galeria</h1>
 
       <div class="content">
-        <div class="cycle-slideshow gallery" data-cycle-fx="scrollHorz" data-cycle-pause-on-hover="true" data-cycle-speed="500" data-cycle-timeout="0"
-          data-cycle-pager=".cycle-pager-gallery" data-cycle-pager-template="<a href='#'><img src='{{src}}'></a>" data-cycle-pager-event="mouseover">
+        <div class="cycle-slideshow gallery" data-cycle-fx="scrollHorz" data-cycle-speed="500" data-cycle-timeout="0"
+          data-cycle-pager=".cycle-pager-gallery" data-cycle-pager-template="<a href='#'><img src='{{src}}'></a>" data-cycle-pager-event="mouseover" data-cycle swipe="true" data-cycle-swipe-fx="scrollHorz">
           <img src="images/fruits/1.jpg" alt="Obraz">
           <img src="images/fruits/2.jpg" alt="Obraz">
           <img src="images/fruits/3.jpg" alt="Obraz">
           <img src="images/fruits/4.jpg" alt="Obraz">
+          <img src="images/fruits/5.jpg" alt="Obraz">
         </div>
         <div class="cycle-pager-gallery"></div>
       </div>
