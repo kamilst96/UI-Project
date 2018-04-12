@@ -43,6 +43,7 @@
 
 @media all and (max-width: 640px) {
   .cycle-pager-gallery {
+    /* Display */
     display: none;
   }
 }

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
 body {
   /* Box model */
   margin: 0;
@@ -6,7 +7,7 @@ body {
   background: #f0f0f0;
   /* Typography */
   color: #333333;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -52,6 +53,7 @@ header span {
   margin: auto 0;
   /* Typography */
   color: #444444;
+  font-family: 'Raleway', sans-serif;
   font-size: 3rem;
 }
 
@@ -169,7 +171,7 @@ section h2 {
 
 section p {
   /* Typography */
-  line-height: 1.5;
+  line-height: 1.6;
   text-align: justify;
 }
 
