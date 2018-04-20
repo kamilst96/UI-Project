@@ -118,20 +118,16 @@ nav a.navtoggle {
 }
 
 /*
- * Page content
+ * Main. Can contain multiple articles.
  */
 
-/* Content container */
-
-article {
+main {
   /* Box model */
   margin: 0 auto;
   max-width: 960px;
 }
 
-/* Section */
-
-section {
+article {
   /* Box model */
   margin: 0 0.4rem 0.4rem;
   border-radius: 0.4rem;
@@ -144,7 +140,7 @@ section {
 
 /* Title */
 
-section h1 {
+article h1 {
   /* Box model */
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   margin: 0;
@@ -155,24 +151,28 @@ section h1 {
   font-weight: normal;
 }
 
-section .content {
+/* Content */
+
+article .content {
   /* Box model */
   padding: 0.6rem;
 }
 
 /*
- * Section components
+ * Article components
  */
 
-section h2 {
-  /* Typography */
-  font-size: 1.2rem;
-}
+/* Paragraphs */
 
-section p {
+article p {
   /* Typography */
   line-height: 1.6;
   text-align: justify;
+}
+
+article h2 {
+  /* Typography */
+  font-size: 1.2rem;
 }
 
 /*
@@ -181,7 +181,7 @@ section p {
  * and append first / last on first/last columns.
  */
 
-section .cols {
+article .cols {
   /* Box model */
   display: flex;
   flex-flow: row;
@@ -189,23 +189,25 @@ section .cols {
   text-align: justify;
 }
 
-section .cols .col {
+article .cols .col {
   /* Box model */
   flex: 1;
   margin: 0 0.6rem;
 }
 
-section .cols .col.first {
+article .cols .col.first {
   /* Box model */
   margin-left: 0;
 }
 
-section .cols .col.last {
+article .cols .col.last {
   /* Box model */
   margin-right: 0;
 }
 
-section img {
+/* Images */
+
+article img {
   /* Display */
   display: block;
   /* Box model */
@@ -216,7 +218,7 @@ section img {
 
 /* Iframes */
 
-section .iframe {
+article .iframe {
   /* Positioning */
   overflow: hidden;
   position: relative;
@@ -227,7 +229,7 @@ section .iframe {
   width: 100%;
 }
 
-section .iframe iframe {
+article .iframe iframe {
   /* Positioning */
   left: 0;
   position: absolute;
@@ -240,50 +242,50 @@ section .iframe iframe {
 
 /* Iframe variants: 4:3 and 16:9. Append to other parameters */
 
-section .iframe.iframe43 {
+article .iframe.iframe43 {
   /* Box model */
   padding-bottom: 75%;
 }
 
-section .iframe.iframe169 {
+article .iframe.iframe169 {
   /* Box model */
   padding-bottom: 56.25%;
 }
 
 /* Inputs */
 
-section input,
-section textarea {
+article input,
+article textarea {
   /* Box model */
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.2rem;
   padding: 6px;
 }
 
-section input:focus,
-section textarea:focus {
+article input:focus,
+article textarea:focus {
   /* Box model */
   border-color: #1e88e5;
   outline: none;
 }
 
-section input[type="text"],
-section input[type="password"],
-section textarea {
+article input[type="text"],
+article input[type="password"],
+article textarea {
   /* Box model */
   margin-bottom: 10px;
   /* Background */
   background: #fafafa;
 }
 
-section textarea {
+article textarea {
   /* Box model */
   min-height: 80px;
   width: 100%;
 }
 
-section input[type="button"],
-section input[type="submit"] {
+article input[type="button"],
+article input[type="submit"] {
   /* Box model */
   padding: 8px 12px;
   /* Typography */
@@ -292,7 +294,7 @@ section input[type="submit"] {
   background: #1e88e5;
 }
 
-section form p {
+article form p {
   /* Box model */
   margin: 0;
 }

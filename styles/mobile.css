@@ -53,20 +53,20 @@
   /*
    * Content
    */
-  section h1 {
+  article h1 {
     /* Typography */
     text-align: center;
   }
-  section .cols {
+  article .cols {
     /* Display */
     flex-flow: column;
   }
-  section .cols .col {
+  article .cols .col {
     /* Box model */
     padding: 0;
   }
-  section input,
-  section textarea {
+  article input,
+  article textarea {
     /* Box model */
     width: 100%;
   }
